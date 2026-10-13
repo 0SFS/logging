@@ -1,0 +1,44 @@
+{
+  "name": "@0sfs/logging",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The 0SFS flight data recorder: channels, history, marks, CSV export and the Logging panel.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    "./flightLog": {
+      "source": "./src/flightLog.ts",
+      "default": "./src/flightLog.ts"
+    },
+    "./flightPerformanceCapture": {
+      "source": "./src/flightPerformanceCapture.ts",
+      "default": "./src/flightPerformanceCapture.ts"
+    },
+    "./flightRecorder": {
+      "source": "./src/flightRecorder.ts",
+      "default": "./src/flightRecorder.ts"
+    },
+    "./LoggingPanel": {
+      "source": "./src/LoggingPanel.tsx",
+      "default": "./src/LoggingPanel.tsx"
+    },
+    "./loggingTab": {
+      "source": "./src/loggingTab.ts",
+      "default": "./src/loggingTab.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@felipegalind0/gamepad-tools": "0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@felipegalind0/gamepad-tools": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "vitest": "4.1.6"
+  }
+}
